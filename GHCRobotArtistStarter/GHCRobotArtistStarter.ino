@@ -86,16 +86,31 @@ void turnRight(int time_ms)
   leftMotor->run(RELEASE);
 }
 
-void drawPicture()
+void drawSquare()
 {
   // Example code -- Fill in your own code here!
-  driveForward(60, 1000);
-  turnRight(1000);
-  wait(500);
-  turnLeft(1000);
-  wait(500);
+   penDown();
+   driveForward(20, 1000);
+   
+   wait(500);
+   turnRight(1300);
+   driveForward(20, 1000);
+
+   wait(500);
+   turnRight(1300);
+   driveForward(20, 1000);
+   
+   wait(500);
+   turnRight(1300);
+   driveForward(20, 1000);
+
+   turnRight(1300);
+   penUp();
+}
+
+void drawPicture(){
   penDown();
-  wait(1000);
+  turnRight(5000);
   penUp();
 }
 
